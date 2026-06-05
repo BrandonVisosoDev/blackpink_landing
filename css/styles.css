@@ -2,7 +2,20 @@
 
 :root{
 
+    /* Colores */
 
+    --color-titulo: #FF4F9A;
+    --color-titulo-border: #FF4F9A;
+    --color-fondo: #000000;
+    --color-fondo-separador: #212121;
+    --color-titulo-separador: white;
+    
+    /* Fuentes */
+
+    --fuente-titulo: 'Black Ops One';
+    --fuente-subtitulo: 'Gravitas One';
+    --fuente-textos: 'Roboto Condensed';
+ 
 }
 
 html{
@@ -29,7 +42,7 @@ body{
 
 .header{
 
-    background-color: #000000;
+    background-color: var(--color-fondo);
     height: 100%;
     width: 100%;
     padding: 2rem;
@@ -38,12 +51,14 @@ body{
 .titulo{
 
     font-size: 5rem;
-    color:#FF4F9A;
+    color:var(--color-titulo);
+    font-family: var(--fuente-titulo);
     text-align: center;
-    border: 1rem solid #FF4F9A;
+    border: 1rem solid var(--color-titulo-border);
     padding: 1rem;
     margin: 1.5rem auto;
     max-width: 400px;
+    
     
 
 }
@@ -54,7 +69,7 @@ body{
     
     height: 6rem;
     width: 100%;
-    background-color: #212121;
+    background-color: var(--color-fondo-separador);
 
 }
 
@@ -65,6 +80,8 @@ body{
     color: white;
     font-size: 4rem;
     text-transform: uppercase;
+    font-family: var(--fuente-subtitulo);
+    
 
 }
 
@@ -72,7 +89,7 @@ body{
 
 .historia{
 
-    background-color: #212121;
+    background-color: var(--color-fondo-separador);
 
 }
 
@@ -83,9 +100,10 @@ body{
 }
 
 .texto-historia {
-    color: #FFFFFF;
+    color: var(--color-titulo-separador);
     text-align: justify;
     font-size: 1.7rem;
+    font-family: var(--fuente-textos);
 }
 
 /* Desktop */
@@ -103,7 +121,7 @@ body{
 
   .texto-historia {
     max-width: 600px;
-    color: #FFFFFF;
+    color: var(--color-titulo-separador);
     text-align: justify;
     font-size: 1.9rem;
   }
