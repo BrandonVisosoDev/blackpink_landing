@@ -25,6 +25,8 @@ body{
 
 }
 
+/* Comienza el titulo */
+
 .header{
 
     background-color: #000000;
@@ -46,6 +48,8 @@ body{
 
 }
 
+/* Hago un separador para cada seccion */
+
 .separador{
     
     height: 6rem;
@@ -64,27 +68,53 @@ body{
 
 }
 
-img{
-    
-    height: 35rem;
-    
+/* Comienza historia considerando la maquetacion responsiva Mobile First y luego desktop */
+
+.historia{
+
+    background-color: #212121;
+
 }
 
 .contenedor-historia {
-  display: flex;          /* Activa flexbox */
-  align-items: center;    /* Centra verticalmente la imagen con el texto */
-  gap: 2rem;              /* Espacio entre columnas */
+  display: flex;
+  flex-direction: column; /* Por defecto en móvil */
+  text-align: center;
 }
 
 .texto-historia {
-  flex: 1;                /* Ocupa la primera columna */
+    color: #FFFFFF;
+    text-align: justify;
+    font-size: 1.7rem;
 }
 
-.contenedor-historia img {
-  max-width: 300px;       /* Controla tamaño de la imagen */
-  height: auto;
-  display: block;
-}
+/* Desktop */
+
+@media (min-width: 768px) {
+
+    .contenedor-historia {
+    flex-direction: row;   /* Texto a la izquierda, imagen a la derecha */
+    align-items: center;   /* Centra verticalmente */
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .texto-historia {
+    max-width: 600px;
+    color: #FFFFFF;
+    text-align: justify;
+    font-size: 1.9rem;
+  }
+
+  .contenedor-historia img {
+    max-width: 500px;
+    height: auto;
+  }
+  
+  }
+
 
 
 
