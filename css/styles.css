@@ -21,5 +21,70 @@ html{
 body{
 
     font-size: 16px; /* Importante en cada proyecto */
+    
 
 }
+
+.header{
+
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.titulo{
+
+    font-size: 5rem;
+    color:#FF4F9A;
+    text-align: center;
+    border: 1rem solid #FF4F9A;
+    padding: 1rem;
+    margin: 1.5rem auto;
+    max-width: 400px;
+    
+
+}
+
+.separador{
+    
+    height: 6rem;
+    width: 100%;
+    background-color: #212121;
+
+}
+
+.subtitulo{
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+
+}
+
+img{
+    
+    height: 35rem;
+    
+}
+
+.contenedor-historia {
+  display: flex;          /* Activa flexbox */
+  align-items: center;    /* Centra verticalmente la imagen con el texto */
+  gap: 2rem;              /* Espacio entre columnas */
+}
+
+.texto-historia {
+  flex: 1;                /* Ocupa la primera columna */
+}
+
+.contenedor-historia img {
+  max-width: 300px;       /* Controla tamaño de la imagen */
+  height: auto;
+  display: block;
+}
+
+
+
