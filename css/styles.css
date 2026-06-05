@@ -1,0 +1,25 @@
+/* Importante para las variables */
+
+:root{
+
+
+}
+
+html{
+
+    font-size: 62.5%; /* Importante en cada proyecto */
+    box-sizing: border-box; 
+
+}
+
+*,*:before, *:after{ /* Importante en cada proyecto */
+
+    box-sizing: inherit;
+
+}
+
+body{
+
+    font-size: 16px; /* Importante en cada proyecto */
+
+}
