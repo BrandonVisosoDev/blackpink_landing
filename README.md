@@ -46,11 +46,11 @@ Abre el archivo index.html en tu navegador.
 
 ¡Disfruta la experiencia visual de BLACKPINK! 🎶
 
-👨‍💻 Autor
+## 👨‍💻 Autor ##
 
-Desarrollado por Brandon Eden – Frontend Developer
-
-© BLACKPINK - All Rights Reserved 2026
-Desarrollado por Brandon Eden – Frontend Developer
 
 © BLACKPINK - All Rights Reserved 2026
+Desarrollado por Brandon Eden – Frontend Developer
+
+---
+
