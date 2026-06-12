@@ -133,7 +133,21 @@ body{
   
   }
 
+  .galeria{
 
+    background-color: var(--color-fondo-separador);
+
+  }
+
+.contenedor-galeria img{
+
+ max-width: 500px;
+ height: auto;
+
+
+
+
+}
 
 
 
