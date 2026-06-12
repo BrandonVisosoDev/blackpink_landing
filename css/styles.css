@@ -37,6 +37,7 @@ html{
 body{
 
     font-size: 16px; /* Importante en cada proyecto */
+    background-color: var(--color-fondo);
     
 
 }
@@ -237,7 +238,46 @@ body{
 
     /* Comienza integrantes */
 
+
+    /* Mobile first */
+
     .integrantes{
+        background-color: var(--color-fondo-separador);
+    }
+
+    .contenedor-integrantes{
+        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;   
+        text-align: center;
+       
+    }
+
+    .contenedor-integrantes img{
+        margin: 0 auto;
+        margin-top: 4rem;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        opacity: .8;
+                
+    }
+
+    .integrantes__nombre, .integrantes__edad{
+        color: var(--color-titulo-separador);
+        font-size: 2rem;
+        font-family: var(--fuente-integrantes);
+        font-style: italic;
+        
+    }
+
+
+    @media (min-width:768px){
+
+        .integrantes{
         background-color: var(--color-fondo-separador);
     }
 
@@ -269,6 +309,11 @@ body{
         font-style: italic;
         
     }
+
+
+    }
+
+    
 
     /* Finalizamos con Footer */
 
