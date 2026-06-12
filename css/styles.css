@@ -17,6 +17,7 @@
     --fuente-textos: 'Roboto Condensed';
     --fuente-links: 'Archivo Black';
     --fuente-integrantes: 'Bevan';
+    --fuente-footer: 'IBM Plex Sans Hebrew';
  
 }
 
@@ -244,21 +245,20 @@ body{
         
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         gap: 2rem;
         max-width: 1000px;
-        margin: 0 auto;
-        
-
-
-        
+        margin: 0 auto;   
+        text-align: center;
+       
     }
 
     .contenedor-integrantes img{
+        margin: 0 auto;
         margin-top: 4rem;
         max-width: 300px;
         height: auto;
         border-radius: 8px;
+        opacity: .8;
                 
     }
 
@@ -267,10 +267,44 @@ body{
         font-size: 2rem;
         font-family: var(--fuente-integrantes);
         font-style: italic;
-        text-align: center;
+        
     }
 
-    
+    /* Finalizamos con Footer */
+
+    .footer{
+        background-color: var(--color-fondo-separador);
+        padding: 2rem 1rem;
+    }
+
+    .contenedor-footer{
+        
+        color: var(--color-titulo-separador);
+        font-size: 1.6rem;
+        font-family: var(--fuente-footer);
+        font-weight: bold;
+        text-align: center;
+
+
+    }
+
+    @media (min-width:768px){
+
+        .footer{
+            background-color: var(--color-fondo-separador);
+            padding: 2rem;
+        }
+
+        .contenedor-footer{
+            color: var(--color-titulo-separador);
+            font-size: 2rem;
+            font-family: var(--fuente-footer);
+            font-weight: bold;
+            text-align: center;
+        }
+
+    }
+
 
     
 
