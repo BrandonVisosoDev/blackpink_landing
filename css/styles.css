@@ -16,6 +16,7 @@
     --fuente-subtitulo: 'Gravitas One';
     --fuente-textos: 'Roboto Condensed';
     --fuente-links: 'Archivo Black';
+    --fuente-integrantes: 'Bevan';
  
 }
 
@@ -231,6 +232,42 @@ body{
         
     }
         
+    }
+
+    /* Comienza integrantes */
+
+    .integrantes{
+        background-color: var(--color-fondo-separador);
+    }
+
+    .contenedor-integrantes{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        
+
+
+        
+    }
+
+    .contenedor-integrantes img{
+        margin-top: 4rem;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+                
+    }
+
+    .integrantes__nombre, .integrantes__edad{
+        color: var(--color-titulo-separador);
+        font-size: 2rem;
+        font-family: var(--fuente-integrantes);
+        font-style: italic;
+        text-align: center;
     }
 
     
