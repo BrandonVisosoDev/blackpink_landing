@@ -185,6 +185,26 @@ body{
 
 /* Mobile first */
 
+.contenedor-canciones {
+    background-color: var(--color-fondo-separador);
+    padding: 2rem 1rem; /* espacio interno */
+    
+}
+
+.lista-canciones {
+    color: var(--color-titulo-separador);
+    font-size: 1.6rem;
+    list-style-position: inside;
+    font-family: var(--fuente-links);
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+
 
 
 
