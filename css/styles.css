@@ -15,6 +15,9 @@
     --fuente-titulo: 'Black Ops One';
     --fuente-subtitulo: 'Gravitas One';
     --fuente-textos: 'Roboto Condensed';
+    --fuente-links: 'Archivo Black';
+    --fuente-integrantes: 'Bevan';
+    --fuente-footer: 'IBM Plex Sans Hebrew';
  
 }
 
@@ -34,6 +37,7 @@ html{
 body{
 
     font-size: 16px; /* Importante en cada proyecto */
+    background-color: var(--color-fondo);
     
 
 }
@@ -132,6 +136,222 @@ body{
   }
   
   }
+
+/* Comienza galeria */
+
+/* Mobile First */
+
+.galeria {
+    background-color: var(--color-fondo-separador);
+    padding: 1rem;
+}
+
+.contenedor-galeria {
+    display: flex;
+    flex-direction: column; /* En móvil, imágenes una debajo de otra */
+    align-items: center;
+    gap: 1rem;
+}
+
+.contenedor-galeria img {
+    max-width: 100%; /* Que se ajuste al ancho del móvil */
+    height: auto;
+    border-radius: 8px; /* opcional, para estética */
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+    .contenedor-galeria {
+        flex-direction: row; /* En desktop, imágenes en fila */
+        flex-wrap: wrap;     /* Que se acomoden si son muchas */
+        justify-content: center;
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+        
+    }
+
+    .contenedor-galeria img {
+        max-width: 300px; /* Controla tamaño en pantallas grandes */
+        height: auto;
+    }
+}
+
+
+
+/* Comienza canciones */
+
+
+/* Mobile first */
+
+.contenedor-canciones {
+    background-color: var(--color-fondo-separador);
+    padding: 2rem 1rem; /* espacio interno */
+    
+}
+
+.lista-canciones {
+    color: var(--color-titulo-separador);
+    font-size: 1.6rem;
+    list-style-position: inside;
+    font-family: var(--fuente-links);
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+
+
+
+
+/* Desktop */
+
+    @media (min-width:768px){
+
+        .contenedor-canciones{
+        background-color: var(--color-fondo-separador);
+        padding: 2rem;
+    }
+
+    .lista-canciones{
+        color: var(--color-titulo-separador);
+        font-size: 2rem;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        font-family: var(--fuente-links);
+        font-style: italic;
+        
+    }
+        
+    }
+
+    /* Comienza integrantes */
+
+
+    /* Mobile first */
+
+    .integrantes{
+        background-color: var(--color-fondo-separador);
+    }
+
+    .contenedor-integrantes{
+        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;   
+        text-align: center;
+       
+    }
+
+    .contenedor-integrantes img{
+        margin: 0 auto;
+        margin-top: 4rem;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        opacity: .8;
+                
+    }
+
+    .integrantes__nombre, .integrantes__edad{
+        color: var(--color-titulo-separador);
+        font-size: 2rem;
+        font-family: var(--fuente-integrantes);
+        font-style: italic;
+        
+    }
+
+
+    @media (min-width:768px){
+
+        .integrantes{
+        background-color: var(--color-fondo-separador);
+    }
+
+    .contenedor-integrantes{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;   
+        text-align: center;
+       
+    }
+
+    .contenedor-integrantes img{
+        margin: 0 auto;
+        margin-top: 4rem;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        opacity: .8;
+                
+    }
+
+    .integrantes__nombre, .integrantes__edad{
+        color: var(--color-titulo-separador);
+        font-size: 2rem;
+        font-family: var(--fuente-integrantes);
+        font-style: italic;
+        
+    }
+
+
+    }
+
+    
+
+    /* Finalizamos con Footer */
+
+    .footer{
+        background-color: var(--color-fondo-separador);
+        padding: 2rem 1rem;
+    }
+
+    .contenedor-footer{
+        
+        color: var(--color-titulo-separador);
+        font-size: 1.6rem;
+        font-family: var(--fuente-footer);
+        font-weight: bold;
+        text-align: center;
+
+
+    }
+
+    @media (min-width:768px){
+
+        .footer{
+            background-color: var(--color-fondo-separador);
+            padding: 2rem;
+        }
+
+        .contenedor-footer{
+            color: var(--color-titulo-separador);
+            font-size: 2rem;
+            font-family: var(--fuente-footer);
+            font-weight: bold;
+            text-align: center;
+        }
+
+    }
+
+
+    
 
 
 
