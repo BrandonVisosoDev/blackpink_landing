@@ -15,6 +15,7 @@
     --fuente-titulo: 'Black Ops One';
     --fuente-subtitulo: 'Gravitas One';
     --fuente-textos: 'Roboto Condensed';
+    --fuente-links: 'Archivo Black';
  
 }
 
@@ -135,9 +136,8 @@ body{
 
 /* Comienza galeria */
 
-/* Mobile first por defecto */
-
 /* Mobile First */
+
 .galeria {
     background-color: var(--color-fondo-separador);
     padding: 1rem;
@@ -157,6 +157,7 @@ body{
 }
 
 /* Desktop */
+
 @media (min-width: 768px) {
     .contenedor-galeria {
         flex-direction: row; /* En desktop, imágenes en fila */
@@ -178,6 +179,43 @@ body{
 }
 
 
+
+/* Comienza canciones */
+
+
+/* Mobile first */
+
+
+
+
+/* Desktop */
+
+    @media (min-width:768px){
+
+        .contenedor-canciones{
+        background-color: var(--color-fondo-separador);
+        padding: 2rem;
+    }
+
+    .lista-canciones{
+        color: var(--color-titulo-separador);
+        font-size: 2rem;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        font-family: var(--fuente-links);
+        font-style: italic;
+        
+    }
+        
+    }
+
+    
+
+    
 
 
 
